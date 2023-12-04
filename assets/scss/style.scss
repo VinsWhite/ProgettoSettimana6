@@ -1,0 +1,185 @@
+@import '../scss/override';
+@import '../scss/variables';
+
+body {
+    background-color: $coloreSfondo;
+    user-select: none;
+}
+
+header, main{
+    p, h1, h2, h3, h4, h5 {
+        color: $coloreTesti;
+        cursor: pointer;
+    }
+}
+
+input[type="checkbox"] {
+    transform: scale(1.2);
+    border: 0.05em solid #7c7c7c;
+  
+    &:checked {
+      &::before {
+        border: none;
+        content: '';
+        display: block;
+        width: 0.6em;
+        height: 0.3em;
+        background-color: #7c7c7c;
+        transform: rotate(-45deg) translate(-25%, 45%);
+      }
+    }
+}
+  
+
+/*FOOTER*/
+footer {
+    p,button {
+        color: $coloreFooterText;
+
+        &:hover {
+            color: $coloreFooterText_hover;
+        }
+    }
+
+    button {
+        border-color: $coloreFooterText;
+    }
+}
+
+
+/* CLASSI CUSTOM */
+.btn-nero {
+    background-color: $colorePulsanti;
+}
+
+.ripeti {
+    grid-template-columns: repeat(3,100%);
+    overflow:hidden;
+    scroll-behavior: smooth;
+}
+
+.custom-border-bottom {
+    border-bottom: 0.05em solid $ColoreBorderBottom;
+}
+
+.bg-gray {
+    background-color: $coloreFooterText;
+}
+
+.carosello {
+    #carouselExample, #carouselExample2, #carouselExample3 {
+        & .carousel-inner {
+            & .carousel-item {
+                & img {
+                    transition: transform 0.3s ease-in-out;
+                    cursor: pointer;
+                }
+
+                & img:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+
+/* .dropdown-toggle {
+    &:hover {
+
+    }
+} */
+
+.profile {
+    @media screen and (max-width: 800px) {
+        width:100%;
+    }
+
+    @media screen and (min-width: 801px) and (max-width: 1199px) {
+        width:75%;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width:50%;
+    }
+}
+
+.sett {
+    header, main{
+        p, h1, h2, h3, h4, h5 {
+            color: $coloriTestiImpostazioni;
+            cursor: pointer;
+        }
+    }
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.settings {
+    @media screen and (max-width: 800px) {
+        width:100%;
+    }
+
+    @media screen and (min-width: 801px) and (max-width: 1199px) {
+        width:85%;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width:75%;
+    }
+}
+
+/* modifichiamo classi bootstrap */
+.carousel-control-next {
+    width: 8%;
+}
+
+.carousel-control-prev {
+    width: 8%;
+}
+
+.dropdown-menu[data-bs-popper] {
+    @media screen and (min-width: 992px) {
+        top: 120%;
+        left: -240%;
+        margin-top: var(--bs-dropdown-spacer);
+    }
+    
+    @media screen and (max-width: 991px) {
+        top: 120%;
+        left: 0;
+        margin-top: var(--bs-dropdown-spacer);
+    }
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    color: var(--bs-dropdown-link-hover-color);
+    background-color: rgb(46, 45, 45);
+}
+
+.dropdown-divider { /* cambio colore all'hr */
+    border-top: 1px solid white;
+}
+
+
+
+/* MARGIN & PADDING CUSTOM */
+@for $margin from 0 to 10 {
+    .custom-margin-#{$margin} {
+        margin: #{$margin} + 'em';
+    }
+}
+
+@for $marginT from 0 to 10 { /* margin top */
+    .custom-margin-Top-#{$marginT} {
+        margin-top: #{$marginT} + 'em';
+    }
+}
+
+@for $paddingS from 0 to 15 { /* margin top */
+    .custom-padding-Start-#{$paddingS} {
+        padding-right: #{$paddingS} + 'em';
+    }
+}

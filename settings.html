@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/avatar-logo/logo.jpg">
+    <title> Netflix - Settings </title>
+</head>
+<body class="bg-white sett">
+
+    <header>
+        <!-- barra di navigazione -->
+        <nav class="navbar navbar-expand-lg bg-black">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/avatar-logo/netflix_logo.png" alt="logo di Netflix" width="70" height="40">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Tv Shows</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Movies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Recently Added</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">My list</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        <a class="nav-link" href="#"><img src="assets/img/icons/search.svg" alt="Cerca"></a>
+                        <a class="nav-link ps-2" href="#"><img src="assets/img/avatar-logo/kids_icon.png" alt="kids" width="30" height="30"></a>
+                        <a class="nav-link ps-2" href="#"><img src="assets/img/icons/bell.svg" alt="Notifiche"></a>
+                        
+                        <li class=" list-group nav-item dropdown ps-2">
+                            <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="assets/img/avatar-logo/avatar.png" alt="Avatar" width="30" height="30">
+                            </a>
+                            <ul class="dropdown-menu bg-black">
+                                <li><a class="dropdown-item text-light" href="profile.html"><img src="assets/img/icons/pencil.svg" alt="gestisci">  Gestisci i profili</a></li>
+                                <li><a class="dropdown-item text-light" href="settings.html"><img src="assets/img/icons/person.svg" alt="account">  Account</a></li>
+                                <li><hr class="dropdown-divider text-light"></li>
+                                <li><a class="dropdown-item text-light" href="#"><img src="assets/img/icons/gear.svg" alt="impostazioni">  Impostazioni</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container settings mt-4">
+            <h1 class="h1 custom-border-bottom">Account</h1>
+            <div class="d-flex justify-content-between custom-border-bottom flex-column flex-md-row">
+                <div>
+                    <p class="text-uppercase">Membership & billing</p>
+                    <button class="px-4 py-2 border-0">Cancel Membership</button>
+                </div>
+
+
+                <div class="w-75">
+                    <div class="d-flex justify-content-between custom-border-bottom pb-3 flex-column flex-sm-row">
+                        <div>
+                            <p class="fw-bold">student@strive.school</p>
+                            <p>Password: ************ </p>
+                            <p>Phone: 123 4567 890</p>
+                        </div>
+                            
+                        <div class="d-flex flex-column text-sm-end text-start">
+                            <a href="#">Change account email</a>
+                            <a href="#">Change password</a>
+                            <a href="#">Change phone number</a>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between pb-3 flex-column flex-sm-row">
+                        <div class="d-flex">
+                            <p><img src="assets/img/icons/paypal.svg" alt="paypal"></p>
+                            <p class="fw-bold">student@strive.school</p>
+                        </div>
+                            
+                        <div class="d-flex flex-column text-sm-end text-start">
+                            <a href="#">Update payment info</a>
+                            <a href="#">Billing details</a>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+
+            <!-- contenitore plan details -->
+            <div class="d-flex justify-content-between custom-border-bottom mt-2 flex-column flex-md-row">
+                <div>
+                    <p class="text-uppercase">plan details</p>
+                </div>
+
+
+                <div class="w-75">
+                    <div class="d-flex justify-content-between pb-3 flex-column flex-sm-row">
+                        <div class="d-flex">
+                            <p class="fw-bold">Premium</p>
+                            <p class="ps-2">ULTRA <span class="fw-bold">HD</span></p>
+                        </div>
+                            
+                        <div class="d-flex flex-column text-sm-end text-start">
+                            <a href="#">Change Plan</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                
+            </div>
+
+            <!-- contenitore setting -->
+            <div class="d-flex justify-content-between custom-border-bottom mt-2 flex-column flex-md-row">
+                <div>
+                    <p class="text-uppercase">settings</p>
+                </div>
+
+
+                <div class="w-75">
+                    <div class="d-flex justify-content-between pb-3 flex-column flex-sm-row">    
+                        <div class="d-flex flex-column text-start">
+                            <a href="#">Parental Control</a>
+                            <a href="#">Test participation</a>
+                            <a href="#">Manage download devices</a>
+                            <a href="#">Activate a devide</a>
+                            <a href="#">Recent device streaming activiy</a>
+                            <a href="#">Sign out of all devices</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                
+            </div>
+
+
+            <!-- contenitore my profile -->
+            <div class="d-flex justify-content-between custom-border-bottom mt-2 flex-column flex-md-row">
+                <div>
+                    <p class="text-uppercase">My profile</p>
+                </div>
+
+
+                <div class="w-75">
+                    <div class="d-flex justify-content-between pb-3 flex-column flex-sm-row">
+                        <div class="d-flex flex-column">
+                            <div class="d-flex">
+                                <p><img src="assets/img/avatar-logo/avatar.png" width="30" alt="avatar"></p>
+                                <p class="ps-2 text-dark fw-semibold">Strive student</p>
+                            </div>
+                            
+                            <div class="mt-3 d-flex flex-column">
+                                <a href="#">Language</a>
+                                <a href="#">Playback settings</a>
+                                <a href="#">Subtitle Appereance</a>
+                            </div>
+                        </div>
+                            
+                        <div class="d-flex flex-column text-start mt-5">
+                            <a href="#">Viewing activity</a>
+                            <a href="#">Ratings</a>
+                        </div>
+
+                        <div class="d-flex flex-column text-end">
+                            <a href="#">Manage profiles</a>
+                            <a href="#">Add profile email</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                
+            </div>
+
+        </div>
+    </main>
+
+    <script src="assets/bootstrap/bootstrap-5.3.2/dist/js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="assets/script/script.js"></script>
+</body>
+</html>

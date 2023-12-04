@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/avatar-logo/logo.jpg">
+    <title>Netflix - Profile</title>
+</head>
+<body>
+    <header class="mt-3 ms-1">
+        <a href="index.html" ><img src="assets/img/avatar-logo/netflix_logo.png" alt="logo di Netflix" width="70" height="40"></a>
+    </header>
+
+    <main class="container d-flex justify-content-center">
+        <div class="profile">
+            <div class="custom-border-bottom">
+                <h1 class="h1">Edit Profile</h1>
+            </div>
+
+            <!-- contenuto sotto la scritta -->
+            <div class="mt-2 d-flex justify-content-around custom-border-bottom pb-3 flex-sm-row flex-column">
+                <!-- immagine avatar -->
+                <div>
+                    <img src="assets/img/avatar-logo/avatar.png" alt="avatar" width="130" class="mb-xl-0 mb-2">
+                </div>
+
+                <div>
+                    <!-- dropdown titoli -->
+                    <div class="dropdown">
+                        <a class="btn bg-gray text-light text-start px-xl-5 px-3 rounded-0 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Strive Student
+                        </a>
+                      
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- lingua -->
+                    <p class="mt-3">Language:</p>
+                    <!-- dropdown lingua -->
+                    <div class="dropdown custom-border-bottom pb-3">
+                        <a class="btn bg-gray text-light border-1 border-light bg-black rounded-0 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Lingua
+                        </a>
+                      
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Italiano</a></li>
+                          <li><a class="dropdown-item" href="#">Inglese</a></li>
+                          <li><a class="dropdown-item" href="#">Francese</a></li>
+                          <li><a class="dropdown-item" href="#">Spagnolo</a></li>
+                          <li><a class="dropdown-item" href="#">Cinese</a></li>
+                          <li><a class="dropdown-item" href="#">Giapponese</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- maturity setting -->
+                    <div class="custom-border-bottom pb-3">
+                        <p class="mt-3">Maturity Setting:</p>
+                        <button class="text-uppercase text-light fw-semibold border-0 bg-gray">All maturity ratings</button>
+                        <p>Show titles of <span class="fw-bold"> all maturity ratings </span>for this profile.</p>
+                        <button class="text-uppercase text-light fw-semibold border-1 border-light px-3 bg-black">Edit</button>
+                    </div>
+
+                    <!-- autoplay controls -->
+                    <div class="mt-2">
+                        <p>Autoplay controls</p>
+                        <div class="d-flex">
+                            <input type="checkbox" name="checkbox" id="check1">
+                            <p class="m-0 ps-2">Autoplay next episodes in a series on all device</p>
+                        </div>
+                        <div class="d-flex">
+                            <input type="checkbox" name="checkbox" id="check2">
+                            <p class="m-0 ps-2">Autoplay previews while browsing on all device</p>
+                        </div>       
+                    </div>
+                </div>
+            </div>
+
+            <!-- salva impostazioni -->
+            <div class="mt-3 container text-center gx-1">
+                <div class="row">
+                  <div class="col-12 col-md-4 mt-md-0 mt-2">
+                    <button class="text-uppercase px-3 border-0">Save</button>
+                  </div>
+                  <div class="col-12 col-md-4 mt-md-0 mt-2">
+                    <button class="text-uppercase px-3 border-1 text-light btn-nero">Cancel</button>
+                  </div>
+                  <div class="col-12 col-md-4 mt-md-0 mt-2">
+                    <button class="text-uppercase px-3 border-1 text-light btn-nero">Delete Profile</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+    </main>
+
+    <script src="assets/bootstrap/bootstrap-5.3.2/dist/js/bootstrap.js"></script>
+</body>
+</html>
